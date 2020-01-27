@@ -36,5 +36,6 @@ def to_roman(input):
         #   and quotient is the number of times the numeral will appear
         #   and lastly remainder is the new input number to divmod in order
         #   to find the next numeral
-
+        #   Alternative implementation is to check if the remainder is 0
+        
     return ''.join(roman_numerals)
