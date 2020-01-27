@@ -27,6 +27,10 @@ def to_roman(input):
         print("Input must be greater than 0 absolute value will be used")
         input = abs(input)
 
+    if input == 0:
+        print("0 entered will be incremented to 1")
+        input = 1
+
     roman_numerals=[]
 
     for numeral, val in roman_tuple:
