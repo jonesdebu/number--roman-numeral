@@ -23,6 +23,10 @@ roman_tuple = [
 def to_roman(input):
     #create an array to hold the calculated numerals
     #and append new discovered numerals to the array
+    if input < 0:
+        print("Input must be greater than 0 absolute value will be used")
+        input = abs(input)
+
     roman_numerals=[]
 
     for numeral, val in roman_tuple:

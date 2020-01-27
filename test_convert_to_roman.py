@@ -17,3 +17,5 @@ def test_to_roman():
     assert to_roman(5) == "V"
     assert to_roman(4) == "IV"
     assert to_roman(1) == "I"
+    assert to_roman(0) == "I" #expect an input of 0 to be changed to 1 by default
+    assert to_roman(-1) == "I" #expect a negative value to use the absolute value of the input instead
