@@ -26,7 +26,7 @@ def to_roman(input):
     roman_numerals=[]
 
     for numeral, val in roman_tuple:
-        while val <= input
+        while val <= input:
             (quotient, remainder) = divmod(input, val)
             input = remainder
             roman_numerals.append(numeral * quotient)
@@ -37,5 +37,5 @@ def to_roman(input):
         #   and lastly remainder is the new input number to divmod in order
         #   to find the next numeral
         #   Alternative implementation is to check if the remainder is 0
-        
+
     return ''.join(roman_numerals)
