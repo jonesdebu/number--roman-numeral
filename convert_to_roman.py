@@ -25,8 +25,8 @@ def to_roman(input):
     #and append new discovered numerals to the array
     roman_numerals=[]
 
-    for numeral, number in roman_tuple:
-        (quotient, remainder) = divmod(input, number)
+    for numeral, val in roman_tuple:
+        (quotient, remainder) = divmod(input, val)
         input = remainder
         roman_numerals.append(numeral * quotient)
 
