@@ -1,6 +1,7 @@
-#first create a tuple to hold the roman numerals
-import sys
+#Donovan Jones 1/27/2020
+# jonesde@bu.edu
 
+#first create a tuple to hold the roman numerals
 roman_tuple = [
     ("M", 1000), ("CM", 900), ("D", 500),
     ("CD", 400), ("C", 100), ("XC", 90),
@@ -19,7 +20,8 @@ roman_tuple = [
 
 #The quotient is 3 so the M numeral will be appended 3 times
 
-#This sequence continuies until the remainder returned by divmod = 0.
+#This sequence continuies until it has iterated through every value in the 
+#roman numeral tuple
 def to_roman(input):
     #create an array to hold the calculated numerals
     #and append new discovered numerals to the array
